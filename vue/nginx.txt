@@ -1,0 +1,20 @@
+1. 下载nginx
+https://www.nginx.com/
+2. 使用nginx
+开启nginx 双击启动 或者 cmd里 nginx start
+3. 改变nginx默认路径
+在conf 里 nginx.conf   
+
+location / {
+     root   dist;
+     index  index.html index.htm;
+}
+3. 在网页里输入 localhost 访问
+
+
+nginx 命令
+
+stop — 直接关闭 nginx
+quit — 会在处理完当前正在的请求后退出，也叫优雅关闭
+reload — 重新加载配置文件，相当于重启
+reopen — 重新打开日志文件 比如，等待当前子进程处理完正在执行的请求后，结束 nginx 进程，可以使用下列命令：

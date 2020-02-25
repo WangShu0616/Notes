@@ -1,0 +1,11 @@
+图片懒加载
+1. 安装插件
+npm install vue-lazyload --save
+2. 引入插件
+import VueLazyLoad from 'vue-lazyload'
+3.使用插件
+Vue.use(VueLazyLoad ,{
+      可以加各种参数，如： 
+       loading
+       详细看文档
+})
